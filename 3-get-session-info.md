@@ -2,10 +2,10 @@
 
 ## 3.1 Authentication
 To make a request:
-- Encode your credential in base64 for HTTP Basic Authenitication. You can run this command below to get the encoded token
+- Encode your credentials in base64 for HTTP Basic Authenitication. You can run this command below to get the encoded token
 `echo -n <your_username>:<your_api_key>`
 
-If your are using NodeJs, you can use `btoa` module to encode your credential.
+If you are using Node.js, you can use `btoa` module to encode your credentials.
 ~~~
 const btoa = require('btoa')
 var basicAuth = btoa({your_username}:{your_api_key})
@@ -49,16 +49,16 @@ curl -X GET https://api.kobiton.com/v1/{request_path}
 ~~~
 
 ### 3.2.1 Get Application Info
-`GET /apps/{application_id}`
+`GET /apps/{application_ID}`
 You can get your application id in your desiredCaps.
 
 ### 3.2.2 Get Session Info
-`GET /session/{sessionId}`
+`GET /session/{sessionID}`
 
 Response elements:
 - `state`: Test final result
 - `deviceBooked`: Check if the device is booked
-- `log`: Test log (text + video)
+- `log`: The log URL and video URL  
 * Log url and video url might take a while to be uploaded to Kobtion Portal. Therefore, you will have to wait before getting your session information.
 
 For more information, check [Kobiton API Document](https://api.kobiton.com/docs/?javascript--nodejs#get-a-session)  
@@ -66,20 +66,21 @@ For more information, check [Kobiton API Document](https://api.kobiton.com/docs/
 ### 3.2.2 Get Session Commands
 `GET /session/{sessionId}/commands`
 
-To get a certain page of your commands, add `page` parameter in your query
+To get a certain page of your commands, add `page` parameter in your query.  
+  
 For example:
 `GET /session/{sessionId}/commands?page=2`
 
 ## 3.3 Final result
 The test is either a success or failure.  
 **Failure Case**  
-* **Device if already booked, please select another device.**  
-This means your device is already in-used. You may either select another device or turn off the booked one.  
+* **Device is already booked, please select another device.**  
+This means your device is already being used. You may either select another device or turn off the booked one.  
 * **Other**  
-Contact Kobiton for more support
+Contact Kobiton for more support.
 
 -----
-Kobiton API document: [https://api.kobiton.com/docs](https://api.kobiton.com/docs)
+Kobiton API documentation: [https://api.kobiton.com/docs](https://api.kobiton.com/docs)
 
 
 
