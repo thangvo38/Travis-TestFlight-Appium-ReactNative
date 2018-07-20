@@ -1,0 +1,6 @@
+port: <PORT>
+travisci_repo_config:
+  travisci_token: <YOUR_TRAVIS_TOKEN>
+  github_username: <YOUR_GITHUB_USERNAME>
+  repo: <YOUR_PROJECT_REPOSITORY>
+  branch: <YOUR_PROJECT_BRANCH>
