@@ -5,7 +5,7 @@ This guild will teach you how to build your Github repository on Travis CI every
 - Go to www.travis-ci.org and click on the "Sign in with Github" button in the upper right corner of the screen
 ![](assets/1_travis_signin.jpg)
 
-- Enter your Github Id and Password then click "Sign in"
+- Enter your Github username and Password then click "Sign in"
 ![](assets/1_travis_signin_github.jpg)
 
 ## 1.2 Sync your Github repository with Travis CI
