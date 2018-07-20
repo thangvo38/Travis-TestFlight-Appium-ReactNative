@@ -45,4 +45,3 @@ Once the building process is done, you can see the result in the dialog below.
 ------
 And that is how to trigger a Travis CI build from a push to Github.  
 In [the next article](2-run-kobiton-test.md), I will demonstrate how to run Kobiton automation test on Travis and secure your ApiKey.
-
