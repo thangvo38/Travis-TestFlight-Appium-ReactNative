@@ -1,59 +1,31 @@
 # Call Kobiton REST API to get session information
+This part will demonstrate how to get session information with Kobiton rest api. 
+>Kobiton have supported multiple language for [API documentation](add_api_doc_url). Go to docs for further language support
 
-## 3.1 Authentication
+## Prerequisites
+  - Kobiton installed.
+  - Kobiton account.
+
+## 1. Authentication
 To make a request:
-- Encode your credential in base64 for HTTP Basic Authenitication. You can run this command below to get the encoded token
+- Encode your credentials in base64 for HTTP Basic Authenitication. You can run this command below to get the encoded token:  
 `echo -n <your_username>:<your_api_key>`
 
-If your are using NodeJs, you can use `btoa` module to encode your credential.
-~~~
-const btoa = require('btoa')
-var basicAuth = btoa({your_username}:{your_api_key})
-~~~
 
-- Set the headers for the request
-~~~
-var header = {
-  'Authorization': 'Basic dGhhbmd2bzo1MDFhYzFhOS1mM2ZiLTRlMDQtOWZhO='
-  'Accept': 'application/json'
-}
-~~~
-
-## 3.2 Send your API request
-- In NodeJs, we can use `request` module to send your API request
-~~~
-const request = require('request');
-
-const headers = {
-  'Authorization': 'Basic dGVzdHVzZXI6MTIzZWQtMTIzZmFjLTkxMzdkY2E=',
-  'Accept':'application/json'
-
-};
-
-request({
-  url: 'https://api.kobiton.com/v1/{request_path}',
-  json: true,
-  method: 'GET',
-
-  headers: headers
-}, function (err, response, body) {
-  //Handle your response here
-});
-~~~
-
-- You can also use curl commands:
+## 2. Get session information through Kobiton REST API
+- To send API request:
 ~~~
 curl -X GET https://api.kobiton.com/v1/{request_path}
 -H 'Authorization: Basic dGVzdHVzZXI6MTIzZWQtMTIzZmFjLTkxMzdkY2E='
 -H 'Accept: application/json'
 ~~~
 
-### 3.2.1 Get Application Info
-`GET /apps/{application_id}`
+### 2.1 Get Application Info
+`GET /apps/{application_ID}`
 You can get your application id in your desiredCaps.
 
-### 3.2.2 Get Session Info
-`GET /session/{sessionId}`
+### 2.2 Get Session Info
+`GET /session/{sessionID}`
 
 Response elements:
 - `state`: Test final result
@@ -63,14 +35,14 @@ Response elements:
 
 For more information, check [Kobiton API Document](https://api.kobiton.com/docs/?javascript--nodejs#get-a-session)  
 
-### 3.2.2 Get Session Commands
+### 2.3 Get Session Commands
 `GET /session/{sessionId}/commands`
 
 To get a certain page of your commands, add `page` parameter in your query
 For example:
 `GET /session/{sessionId}/commands?page=2`
 
-## 3.3 Final result
+## 3. Final result
 The test is either a success or failure.  
 **Failure Case**  
 * **Device if already booked, please select another device.**  
