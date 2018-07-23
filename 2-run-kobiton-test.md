@@ -90,7 +90,7 @@ var desiredCaps = {
 - Push your changes to Github and verify in Travis CI.  
 ![](2_travis_env.jpg)  
 
-## 3. (Optional) Use cache to improve building speed
+## 4. (Optional) Use cache to improve building speed
 Travis CI will download and install your dependencies on every build attempt, which might reduce your performance if your project requires a large amount of dependencies that rarely change. For instance, in Node.js, dependencies are stored in the `node_module` folder.  
 One recommended method is to save those dependencies in caches after your first successful build.  
 Add these the command below after `script` command in `.travis.yml` file:  

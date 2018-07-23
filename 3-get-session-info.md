@@ -20,11 +20,11 @@ curl -X GET https://api.kobiton.com/v1/{request_path}
 -H 'Accept: application/json'
 ~~~
 
-### 3.2.1 Get Application Info
+### 2.1 Get Application Info
 `GET /apps/{application_ID}`
 You can get your application id in your desiredCaps.
 
-### 3.2.2 Get Session Info
+### 2.2 Get Session Info
 `GET /session/{sessionID}`
 
 Response elements:
@@ -35,7 +35,7 @@ Response elements:
 
 For more information, check [Kobiton API Document](https://api.kobiton.com/docs/?javascript--nodejs#get-a-session)  
 
-### 3.2.2 Get Session Commands
+### 2.3 Get Session Commands
 `GET /session/{sessionId}/commands`
 
 To get a certain page of your commands, add `page` parameter in your query.  
@@ -43,7 +43,7 @@ To get a certain page of your commands, add `page` parameter in your query.
 For example:
 `GET /session/{sessionId}/commands?page=2`
 
-## 3.3 Final result
+## 3. Final result
 The test is either a success or failure.  
 **Failure Case**  
 * **Device is already booked, please select another device.**  
