@@ -37,7 +37,7 @@ env:
 env:
   global:
     - KOBITON_USERNAME={your_username_here}
-    - secure: fiMW+BqOmyxvf47dJBvmEqRRZ4r5f6TWjfNUK2hR3K9p0wPMF5qsno+hjp4CVe3gFKAqUJWIyUSTrunoAhDOlguycglafCausl5ilFhfLCEyBt7aHoZhKcdjKCvHU4Us6fleOmjzreb7DrVA/XHF1u47dmt1ltjwo2I4mhDAOS6rUcup1pUGiPizKXYr2zDDNukORtX1iUzgoJxC6UTIs/3H6bYR/UiZMMrJTKeMxZEYMAhyQLGWI/8h32foxYCfEe2Gnb2f7GMqhOXhLUWtBiLNw
+    - secure: fiMW+BqOmyxvf47dJBvmEqRRZ4r5f6TW=
 ~~~
 
 ### 2.2.3 Edit your automation testing script
