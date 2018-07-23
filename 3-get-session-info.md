@@ -1,47 +1,19 @@
 # Call Kobiton REST API to get session information
+This part will demonstrate how to get session information with Kobiton rest api. 
+>Note: Kobiton have supported multiple language for [API documentation](add_api_doc_url). Go to docs for further language support
 
-## 3.1 Authentication
+## Prerequisites
+- Kobiton username.
+- Kobiton API key.
+
+## 1. Authentication
 To make a request:
 - Encode your credentials in base64 for HTTP Basic Authenitication. You can run this command below to get the encoded token
 `echo -n <your_username>:<your_api_key>`
 
-If you are using Node.js, you can use `btoa` module to encode your credentials.
-~~~
-const btoa = require('btoa')
-var basicAuth = btoa({your_username}:{your_api_key})
-~~~
 
-- Set the headers for the request
-~~~
-var header = {
-  'Authorization': 'Basic dGhhbmd2bzo1MDFhYzFhOS1mM2ZiLTRlMDQtOWZhO='
-  'Accept': 'application/json'
-}
-~~~
-
-## 3.2 Send your API request
-- In NodeJs, we can use `request` module to send your API request
-~~~
-const request = require('request');
-
-const headers = {
-  'Authorization': 'Basic dGVzdHVzZXI6MTIzZWQtMTIzZmFjLTkxMzdkY2E=',
-  'Accept':'application/json'
-
-};
-
-request({
-  url: 'https://api.kobiton.com/v1/{request_path}',
-  json: true,
-  method: 'GET',
-
-  headers: headers
-}, function (err, response, body) {
-  //Handle your response here
-});
-~~~
-
-- You can also use curl commands:
+## 2. Get session information through Kobiton REST API
+- To send API request:
 ~~~
 curl -X GET https://api.kobiton.com/v1/{request_path}
 -H 'Authorization: Basic dGVzdHVzZXI6MTIzZWQtMTIzZmFjLTkxMzdkY2E='
