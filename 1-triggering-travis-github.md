@@ -16,7 +16,7 @@ This guide will demonstrate how to get Travis CI to build your project everytime
 
 ## 3 Configure .travis.yml file
 - In order to enable Travis CI to build our project, create a configuration file in your Github repository folder.
-- Create a ".travis.yml" file in your project that includes the following information.  
+- Create a `.travis.yml` file in your project that includes the following information.  
 
 ```
 language: node_js

@@ -1,7 +1,7 @@
 # Travis-TestFlight-Appium-ReactNative
 --------
 
-Guidance on integrating Kobiton service into the mobile app build pipeline: Travis CI, Appium and ReactNative.
+Guidance on integrating Kobiton service into the mobile app build pipeline: Travis CI, Appium and ReactNative.  
 If you are using:
 - Travis CI to build the app
 - TestFlight/Appium to write the automation test

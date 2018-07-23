@@ -8,7 +8,7 @@ This part will demonstrate how to get session information with Kobiton rest api.
 
 ## 1. Authentication
 To make a request:
-- Encode your credentials in base64 for HTTP Basic Authenitication. You can run this command below to get the encoded token
+- Encode your credentials in base64 for HTTP Basic Authenitication. You can run this command below to get the encoded token:  
 `echo -n <your_username>:<your_api_key>`
 
 
