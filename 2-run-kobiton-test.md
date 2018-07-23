@@ -13,7 +13,7 @@ This guide will demonstrate How to run your Kobiton test on Travis CI and how to
   - In the upper right hand corner, click on User icon and in the drop down menu, click on `Profile`.  
 ![](assets/2_kobiton_profile.jpg)
 
-  - You should see your username.
+  - You should see your username.  
 ![](assets/2_kobiton_username.jpg)
 
 ### 1.2 Get Kobiton API key
@@ -30,11 +30,11 @@ In this guide, we will add our Username and API key to `.travis.yml` file. The A
 ### 2.1 Configure .travis.yml file
 - Encrypt API key for security purposes:
   
-  1. To install `travis`, run `gem install travis` on terminal.
-  2. In your repository directory, run:
+1. To install `travis`, run `gem install travis` on terminal.
+2. In your repository directory, run:
     `travis encrypt KOBITON_API_KEY={your_api_key_here} --add env.global`
-  3. This will add a secure encrypted key to your `.travis.yml`
-  4. Add necessary value to the template.
+3. This will add a secure encrypted key to your `.travis.yml`
+4. Add necessary value to the template.
   
 ```
 env:
@@ -116,6 +116,8 @@ cache:
   directories:
     - node_module
 ```
+
+![](assets/2_travis_cache.jpg)
 
 ------
 On the [next issue](3-get-session-info.md), we will use Kobtion API to get testing session information.

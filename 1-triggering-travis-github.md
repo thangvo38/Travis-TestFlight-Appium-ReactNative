@@ -1,20 +1,20 @@
 # Triggering a Travis build from a push to Github
 This guide will demonstrate how to get Travis CI to build your project everytime your source code is changed and pushed to Github.
 
-## 1 Sign in to Travis CI with your Github account
+## 1. Sign in to Travis CI with your Github account
 - Go to www.travis-ci.org and click on the "Sign in with Github" button in the upper right corner of the screen
 ![](assets/1_travis_signin.jpg)
 
 - Enter your Github username and password then click "Sign in"
 ![](assets/1_travis_signin_github.jpg)
 
-## 2 Sync your Github repository with Travis CI
+## 2. Sync your Github repository with Travis CI
 - You can see a list of your Github repositories on the right column. Click on the switch next to your repository's name to sync it to Travis CI.
 ![](assets/1_travis_repos.jpg)
 
 > This guide will use the "travis_test" repository as an example.
 
-## 3 Configure .travis.yml file
+## 3. Configure .travis.yml file
 - In order to enable Travis CI to build our project, create a configuration file in your Github repository folder.
 - Create a `.travis.yml` file in your project that includes the following information.  
 
