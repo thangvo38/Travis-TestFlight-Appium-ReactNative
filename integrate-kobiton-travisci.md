@@ -62,7 +62,7 @@
   node_js:
     - '7'
 
-  script: <automation_script_run_command>
+  script: <AUTOMATION_SCRIPT_RUN_COMMAND>
   ```
   > For example: using our provided sample, the automation script run command could be `npm run android-app-test` or `npm run ios-app-test`
   
@@ -88,7 +88,7 @@
     app:                '<APP_URL>', 
     deviceGroup:        'KOBITON', 
     deviceName:         '<KOBITON_DEVICE_NAME>',
-    platformVersion:    '<DEVICE_VERSION>',
+    platformVersion:    '<KOBITON_DEVICE_VERSION>',
     platformName:       '<DEVICE_PLATFORM_NAME>' 
   } 
   ```
