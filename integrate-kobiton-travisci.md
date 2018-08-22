@@ -11,13 +11,6 @@
 
 ## Prerequisites
   - Kobiton account
-<<<<<<< HEAD
-  >Please visit https://portal.kobiton.com/register to create new account.
-
-## 1. Configure Travis CI with GitHub repository
-
-  In order to run automation test with Kobiton on Travis CI, you will need an empty Github automation test repository and sync it with Travis CI. If you've already done it, skip this step.
-=======
   
   Please visit https://portal.kobiton.com/register to create new account.
 
@@ -26,17 +19,12 @@
   Firstly, let's assume you already have an empty GiHub repository for running automation test.
   
   This part will guide you to configure Travis CI to integrate with your automation test GitHub repository. If you've already known how to get it done, please skip this step.
->>>>>>> 17fd8c9a2f2ac626281dd258330ac731390f99ba
    > For instruction on how to sync GitHub repositories with Travis CI, follow [this guide.](https://docs.travis-ci.com/user/legacy-services-to-github-apps-migration-guide/)
 
   This documentation will use Node.js as the default language for the automation test script. Therefore, integrating Node.js plugin to Travis CI is required.
   > If you do not know how to integrate a Node JS app with Travis CI, follow [this tutorial.](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/) 
 
 ## 2. Configure automation test script
-<<<<<<< HEAD
-  > You can visit [our blog](https://kobiton.com/blog/automation-web-appium-kobiton-nodejs/) for more details on setting up automation test scripts.
-=======
->>>>>>> 17fd8c9a2f2ac626281dd258330ac731390f99ba
 
   **2.1 Get username and API key**   
   Go to https://portal.kobiton.com and login to your Kobiton account.
@@ -51,13 +39,9 @@
 
   **2.2 Get desired capabilities**  
     The desired capabilities need to be added to the automation test script in order tests to be executed on the Kobiton device.
-<<<<<<< HEAD
-  * Login to Kobiton. In the top navigation bar, select **"Devices"**.
-=======
 
   Go to https://portal.kobiton.com and login to your Kobiton account.
   * In the top navigation bar, select **"Devices"**.
->>>>>>> 17fd8c9a2f2ac626281dd258330ac731390f99ba
     ![](assets/1_device_bar.jpg)
   * Hover over any device you want to test with and click on the Automation settings button (the gear symbol)   
   
